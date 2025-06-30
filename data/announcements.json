@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "type": "achievement",
+    "title": "🏆 Award Winner",
+    "message": "Inovus Labs wins 'Best Innovation Hub 2024' at Tech Excellence Awards",
+    "timestamp": "2024-01-15T10:30:00Z",
+    "priority": "high"
+  },
+  {
+    "id": 2,
+    "type": "project",
+    "title": "🚀 New Project Launch",
+    "message": "Project Aurora: Next-gen AI platform development begins with our engineering team",
+    "timestamp": "2024-01-14T14:20:00Z",
+    "priority": "medium"
+  },
+  {
+    "id": 3,
+    "type": "blog",
+    "title": "📝 Latest Blog Post",
+    "message": "\"The Future of Collaborative Innovation\" - Read our CTO's insights on team dynamics",
+    "timestamp": "2024-01-13T09:15:00Z",
+    "priority": "low"
+  },
+  {
+    "id": 4,
+    "type": "event",
+    "title": "📅 Upcoming Event",
+    "message": "Innovation Showcase 2024 - Join us Feb 15th for demos and networking",
+    "timestamp": "2024-01-12T16:45:00Z",
+    "priority": "high"
+  },
+  {
+    "id": 5,
+    "type": "milestone",
+    "title": "🎯 Milestone Achieved",
+    "message": "Successfully delivered 50+ projects this quarter with 98% client satisfaction",
+    "timestamp": "2024-01-11T11:30:00Z",
+    "priority": "medium"
+  },
+  {
+    "id": 6,
+    "type": "partnership",
+    "title": "🤝 New Partnership",
+    "message": "Strategic alliance with TechCorp to accelerate innovation in AI and machine learning",
+    "timestamp": "2024-01-10T13:20:00Z",
+    "priority": "high"
+  },
+  {
+    "id": 7,
+    "type": "recognition",
+    "title": "⭐ Team Recognition",
+    "message": "Our design team featured in 'Top 10 Creative Teams' by Innovation Weekly",
+    "timestamp": "2024-01-09T15:10:00Z",
+    "priority": "medium"
+  },
+  {
+    "id": 8,
+    "type": "product",
+    "title": "💡 Product Update",
+    "message": "InnovateOS 3.0 released with enhanced collaboration tools and AI integration",
+    "timestamp": "2024-01-08T08:45:00Z",
+    "priority": "medium"
+  }
+]

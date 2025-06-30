@@ -20,15 +20,15 @@ export function useResponsiveCanvas(): CanvasDimensions {
   const [dimensions, setDimensions] = useState<CanvasDimensions>({
     width: 1080,
     height: 1920,
-    minSize: 100,
-    maxSize: 160,
-    headerHeight: 180,
-    footerHeight: 140,
-    margin: 60,
+    minSize: 140,
+    maxSize: 220,
+    headerHeight: 280,
+    footerHeight: 220,
+    margin: 80,
     isMobile: false,
     isTablet: false,
     isDesktop: true,
-    scaleFactor: 1.4,
+    scaleFactor: 1.8,
   })
 
   useEffect(() => {
@@ -40,30 +40,29 @@ export function useResponsiveCanvas(): CanvasDimensions {
       const isTablet = width >= 768 && width < 1024
       const isDesktop = width >= 1024
 
-      // Enhanced sizes for distance viewing while maintaining elegance
       let minSize, maxSize, headerHeight, footerHeight, margin, scaleFactor
 
       if (isMobile) {
-        minSize = 70
-        maxSize = 120
-        headerHeight = 120
-        footerHeight = 100
-        margin = 25
+        minSize = 80
+        maxSize = 140
+        headerHeight = 140
+        footerHeight = 120
+        margin = 30
         scaleFactor = 1.2
       } else if (isTablet) {
-        minSize = 85
-        maxSize = 140
-        headerHeight = 150
-        footerHeight = 120
-        margin = 35
-        scaleFactor = 1.3
-      } else {
-        minSize = 100
-        maxSize = 160
-        headerHeight = 180
-        footerHeight = 140
-        margin = 60
+        minSize = 110
+        maxSize = 180
+        headerHeight = 200
+        footerHeight = 170
+        margin = 50
         scaleFactor = 1.4
+      } else {
+        minSize = 140
+        maxSize = 220
+        headerHeight = 280
+        footerHeight = 220
+        margin = 80
+        scaleFactor = 1.8
       }
 
       setDimensions({
