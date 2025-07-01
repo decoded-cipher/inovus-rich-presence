@@ -20,11 +20,11 @@ export default function InovusNetworkVisualization() {
   const [activeDetailIndex, setActiveDetailIndex] = useState<number>(-1)
   const dimensions = useResponsiveCanvas()
 
-  // Auto-refresh the page every minute
+  // Auto-refresh the page every 5 minutes
   useEffect(() => {
     const refreshInterval = setInterval(() => {
       window.location.reload()
-    }, 60 * 1000) // 60 seconds
+    }, 5 * 60 * 1000) // 5 minutes
 
     return () => clearInterval(refreshInterval)
   }, [])
