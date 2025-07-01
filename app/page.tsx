@@ -20,6 +20,15 @@ export default function InovusNetworkVisualization() {
   const [activeDetailIndex, setActiveDetailIndex] = useState<number>(-1)
   const dimensions = useResponsiveCanvas()
 
+  // Auto-refresh the page every minute
+  useEffect(() => {
+    const refreshInterval = setInterval(() => {
+      window.location.reload()
+    }, 60 * 1000) // 60 seconds
+
+    return () => clearInterval(refreshInterval)
+  }, [])
+
   useEffect(() => {
     const initialPeople: Person[] = (peopleData as PersonData[]).slice(0, 8).map((person, index) => {
       const size = dimensions.minSize + Math.random() * (dimensions.maxSize - dimensions.minSize)
@@ -52,7 +61,8 @@ export default function InovusNetworkVisualization() {
   useNetworkPhysics({ people, setPeople, activeDetailIndex, dimensions })
   useDetailCycle({ people, setActiveDetailIndex })
 
-  const activePersonName = activeDetailIndex >= 0 ? people[activeDetailIndex]?.name.split(" ")[0] : undefined
+  // const activePersonName = activeDetailIndex >= 0 ? people[activeDetailIndex]?.name.split(" ")[0] : undefined
+  const activePersonName = activeDetailIndex >= 0 ? people[activeDetailIndex]?.name : undefined
 
   return (
     <div className="relative w-full h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100 overflow-hidden">

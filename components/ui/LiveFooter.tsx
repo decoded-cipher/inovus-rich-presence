@@ -54,27 +54,28 @@ export function LiveFooter({ peopleCount, activePersonName, dimensions }: LiveFo
                   <div className="text-slate-600 font-semibold uppercase tracking-wider text-base">Live Updates</div>
                 </div>
                 <div className="bg-gradient-to-b from-transparent via-slate-400 to-transparent w-px h-20" />
-                <div className="text-center">
-                  <div className="font-bold text-slate-900 mb-2 text-3xl">{activePersonName || "—"}</div>
+                <div className="text-center w-1/3">
+                  <div className="font-bold text-slate-900 mb-2 text-3xl">{activePersonName || "?"}</div>
                   <div className="text-slate-600 font-semibold uppercase tracking-wider text-base">In Focus</div>
                 </div>
               </>
             )}
           </div>
 
-          {/* What This Is */}
-          <div className="border-t border-slate-200 pt-6 text-center">
-            <p
-              className={`text-slate-700 leading-relaxed w-full mx-auto text-sm`}
-            >
-              This is a <strong>live visualization</strong> of everyone currently at Inovus Labs. Each bubble
-              represents a real person - students working on projects, mentors providing guidance, entrepreneurs
-              building startups, and visitors exploring ideas. As you watch, bubbles may grow or shrink as people
-              join or leave the space. The active person bubble highlights someone currently in focus, showing their
-              name and role. This dynamic display captures the vibrant, collaborative energy of our innovation hub in
-              real-time.
-            </p>
-          </div>
+          {!dimensions.isMobile && (
+            <>
+              <div className="border-t border-slate-200 pt-6 text-center">
+                <p className={`text-slate-700 leading-relaxed w-full mx-auto text-sm`}>
+                  This is a <strong>live visualization</strong> of everyone currently at Inovus Labs. Each bubble
+                  represents a real person - students working on projects, mentors providing guidance, entrepreneurs
+                  building startups, and visitors exploring ideas. As you watch, bubbles may grow or shrink as people
+                  join or leave the space. The active person bubble highlights someone currently in focus, showing their
+                  name and role. This dynamic display captures the vibrant, collaborative energy of our innovation hub in
+                  real-time.
+                </p>
+              </div>
+            </>
+          )}
         </div>
       </motion.div>
     </div>

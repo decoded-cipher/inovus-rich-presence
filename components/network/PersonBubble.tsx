@@ -64,7 +64,8 @@ export function PersonBubble({ person, index, dimensions }: PersonBubbleProps) {
       >
         <div
           className={`absolute rounded-full border ${
-            dimensions.isMobile ? "inset-2" : dimensions.isTablet ? "inset-3" : "inset-4"
+            // dimensions.isMobile ? "inset-2" : dimensions.isTablet ? "inset-3" : "inset-4"
+            "inset-2"
           }`}
           style={{
             background: `linear-gradient(135deg, ${departmentTheme.background}, rgba(255, 255, 255, 0.3))`,
@@ -74,7 +75,8 @@ export function PersonBubble({ person, index, dimensions }: PersonBubbleProps) {
 
         <div
           className={`absolute rounded-full overflow-hidden border-2 ${
-            dimensions.isMobile ? "inset-4" : dimensions.isTablet ? "inset-6" : "inset-8"
+            // dimensions.isMobile ? "inset-4" : dimensions.isTablet ? "inset-6" : "inset-8"
+            "inset-4"
           }`}
           style={{ borderColor: departmentTheme.border.replace("0.5", "0.3") }}
         >
@@ -97,7 +99,7 @@ export function PersonBubble({ person, index, dimensions }: PersonBubbleProps) {
         <AnimatePresence>
           {person.showDetails && (
             <motion.div
-              className={`absolute left-1/2 transform -translate-x-1/2 z-50 ${
+              className={`absolute left-1/2 transform -translate-x-1/2 z-90 ${
                 dimensions.isMobile ? "-bottom-16" : dimensions.isTablet ? "-bottom-24" : "-bottom-28"
               }`}
               initial={{ opacity: 0, y: 15, scale: 0.9 }}
@@ -144,7 +146,7 @@ export function PersonBubble({ person, index, dimensions }: PersonBubbleProps) {
         </AnimatePresence>
 
         <motion.div
-          className={`absolute rounded-full ${
+          className={`absolute rounded-full -z-10 ${
             dimensions.isMobile ? "-inset-2 border-3" : dimensions.isTablet ? "-inset-3 border-4" : "-inset-4 border-4"
           }`}
           style={{ borderColor: departmentTheme.border }}

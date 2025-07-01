@@ -19,32 +19,34 @@ export function CompanyHeader({ dimensions }: CompanyHeaderProps) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.8, ease: [0.25, 0.1, 0.25, 1] }}
       >
-        <div className="mb-8">
-          <div className="flex items-center justify-between">
-            
-            <Image
-              src="https://inovuslabs.org/assets/logo.svg"
-              alt="Inovus Labs"
-              width={250}
-              height={120}
-              className="opacity-90"
-            />
-            
-            <div className="flex items-center justify-center space-x-4">
-              <motion.div
-                className={`bg-emerald-500 rounded-full w-5 h-5`}
-                animate={{ scale: [1, 1.3, 1], opacity: [0.7, 1, 0.7] }}
-                transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-              />
-              <span className={`text-slate-900 font-semibold text-xl`}>
-                LIVE PRESENCE
-              </span>
-            </div>
 
+        <div className="flex items-center justify-between">
+          <Image
+            src="https://inovuslabs.org/assets/logo.svg"
+            alt="Inovus Labs"
+            width={dimensions.isMobile ? 150 : dimensions.isTablet ? 200 : 250}
+            height={dimensions.isMobile ? 75 : dimensions.isTablet ? 100 : 120}
+            priority
+            style={{ objectFit: "contain" }}
+            draggable={false}
+            loading="eager"
+            fetchPriority="high"
+            className="opacity-90"
+          />
+          
+          <div className="flex items-center justify-center space-x-3">
+            <motion.div
+              className={`bg-emerald-500 rounded-full ${dimensions.isMobile ? "w-3 h-3" : dimensions.isTablet ? "w-4 h-4" : "w-6 h-6"}`}
+              animate={{ scale: [1, 1.3, 1], opacity: [0.7, 1, 0.7] }}
+              transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
+            />
+            <span className={`text-slate-900 font-semibold ${dimensions.isMobile ? "text-sm" : dimensions.isTablet ? "text-base" : "text-xl"}`}>
+              LIVE PRESENCE
+            </span>
           </div>
         </div>
 
-        <div className="mb-6">
+        {/* <div className="mb-6">
           
           <p
             className={`text-slate-700 font-medium ${
@@ -70,7 +72,7 @@ export function CompanyHeader({ dimensions }: CompanyHeaderProps) {
               dimensions.isMobile ? "w-32 h-px" : dimensions.isTablet ? "w-56 h-px" : "w-64 h-px"
             }`}
           />
-        </div>
+        </div> */}
       </motion.div>
     </div>
   )
