@@ -44,9 +44,9 @@ export function useResponsiveCanvas(): CanvasDimensions {
 
       if (isMobile) {
         minSize = 80
-        maxSize = 140
-        headerHeight = 140
-        footerHeight = 120
+        maxSize = 120
+        headerHeight = 100
+        footerHeight = 50
         margin = 30
         scaleFactor = 1.2
       } else if (isTablet) {
@@ -59,7 +59,7 @@ export function useResponsiveCanvas(): CanvasDimensions {
       } else {
         minSize = 140
         maxSize = 220
-        headerHeight = 150
+        headerHeight = 130
         footerHeight = 320
         margin = 80
         scaleFactor = 1.8

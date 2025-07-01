@@ -98,8 +98,8 @@ export function PersonBubble({ person, index, dimensions }: PersonBubbleProps) {
         <AnimatePresence>
           {person.showDetails && (
             <motion.div
-              className={`absolute left-1/2 transform -translate-x-1/2 z-90 ${
-                dimensions.isMobile ? "-bottom-16" : dimensions.isTablet ? "-bottom-24" : "-bottom-28"
+              className={`absolute left-1/2 transform -translate-x-1/2 z-40 ${
+                dimensions.isMobile ? "-bottom-10" : dimensions.isTablet ? "-bottom-24" : "-bottom-28"
               }`}
               initial={{ opacity: 0, y: 15, scale: 0.9 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -107,27 +107,32 @@ export function PersonBubble({ person, index, dimensions }: PersonBubbleProps) {
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
               <div
-                className={`bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl border-2 ${
-                  dimensions.isMobile ? "px-6 py-4" : dimensions.isTablet ? "px-8 py-6" : "px-10 py-8"
+                className={`
+                  z-40 bg-white/95 backdrop-blur-xl shadow-2xl border-2 ${
+                  dimensions.isMobile ? "px-4 py-2 rounded" : 
+                  // dimensions.isTablet ? "px-8 py-6 rounded-xl" : 
+                  // "px-10 py-8 rounded-2xl"
+                  "px-8 py-6 rounded-xl"
                 }`}
                 style={{ borderColor: departmentTheme.border }}
               >
-                <p
-                  className={`font-bold whitespace-nowrap mb-1 ${
-                    dimensions.isMobile ? "text-lg" : dimensions.isTablet ? "text-2xl" : "text-3xl"
-                  }`}
-                  style={{ color: departmentTheme.text }}
+
+                <p className={`font-bold whitespace-nowrap mb-1 ${
+                  dimensions.isMobile ? "text-base" : 
+                  dimensions.isTablet ? "text-2xl" : "text-3xl"
+                }`} style={{ color: departmentTheme.text }}
                 >
                   {person.name}
                 </p>
-                <p
-                  className={`text-slate-600 text-center ${
-                    dimensions.isMobile ? "text-sm" : dimensions.isTablet ? "text-base" : "text-lg"
-                  }`}
-                >
+
+                <p className={`text-slate-600 text-center ${ 
+                  dimensions.isMobile ? "text-xs" : 
+                  dimensions.isTablet ? "text-base" : "text-lg"
+                }`}>
                   {person.role}
                 </p>
-                <div
+                
+                {/* <div
                   className={`flex items-center justify-center mt-2 px-3 py-1 rounded-full ${
                     dimensions.isMobile ? "text-xs" : dimensions.isTablet ? "text-sm" : "text-base"
                   }`}
@@ -138,7 +143,8 @@ export function PersonBubble({ person, index, dimensions }: PersonBubbleProps) {
                 >
                   <div className="w-2 h-2 rounded-full mr-2" style={{ backgroundColor: departmentTheme.primary }} />
                   {person.department}
-                </div>
+                </div> */}
+
               </div>
             </motion.div>
           )}

@@ -70,7 +70,9 @@ export default function InovusNetworkVisualization() {
       <CompanyHeader dimensions={dimensions} />
       <ConnectionCanvas people={people} dimensions={dimensions} />
       <PeopleNetwork people={people} dimensions={dimensions} />
-      <LiveFooter peopleCount={people.length} activePersonName={activePersonName} dimensions={dimensions} />
+      {!dimensions.isMobile && (
+        <LiveFooter peopleCount={people.length} activePersonName={activePersonName} dimensions={dimensions} />
+      )}
       {/* <AnnouncementTicker announcements={announcementsData as Announcement[]} dimensions={dimensions} /> */}
     </div>
   )
