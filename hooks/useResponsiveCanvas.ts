@@ -59,7 +59,7 @@ export function useResponsiveCanvas(): CanvasDimensions {
       } else {
         minSize = 140
         maxSize = 220
-        headerHeight = 220
+        headerHeight = 150
         footerHeight = 320
         margin = 80
         scaleFactor = 1.8

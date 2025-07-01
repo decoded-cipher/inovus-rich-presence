@@ -4,71 +4,79 @@
     "name": "Arjun Krishna",
     "role": "Senior Developer",
     "department": "Engineering",
-    "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face",
+    "photo": "https://storage.googleapis.com/inovuslabs-cdn.appspot.com/assets/team/2018-2020/arjunkrishna.jpg",
+    "joinedAt": null
+  },
+  {
+    "id": 2,
+    "name": "Abhishek V Gopal",
+    "role": "Product Manager",
+    "department": "Product",
+    "photo": "https://storage.googleapis.com/inovuslabs-cdn.appspot.com/assets/team/2023-2024/Abhishek.jpg",
     "joinedAt": null
   },
   {
     "id": 3,
-    "name": "Abhishek V Gopal",
-    "role": "Product Manager",
-    "department": "Product",
-    "photo": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face",
+    "name": "Badhusha Shaji",
+    "role": "Data Scientist",
+    "department": "Data",
+    "photo": "https://storage.googleapis.com/inovuslabs-cdn.appspot.com/assets/team/2023-2024/BadhushaShaji.jpg",
     "joinedAt": null
   },
   {
     "id": 4,
-    "name": "Badhusha Shaji",
-    "role": "Data Scientist",
-    "department": "Data",
-    "photo": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face",
+    "name": "Arjun A Acharry",
+    "role": "DevOps Engineer",
+    "department": "Engineering",
+    "photo": "https://storage.googleapis.com/inovuslabs-cdn.appspot.com/assets/team/2023-2024/ArjunAcharry.jpg",
     "joinedAt": null
   },
   {
     "id": 5,
-    "name": "Arjun A Acharry",
-    "role": "DevOps Engineer",
+    "name": "Nikhil T Das",
+    "role": "Frontend Developer",
     "department": "Engineering",
-    "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face",
+    "photo": "https://storage.googleapis.com/inovuslabs-cdn.appspot.com/assets/team/2023-2024/NikilTDas.jpg",
     "joinedAt": null
   },
   {
     "id": 6,
-    "name": "Nikhil T Das",
-    "role": "Frontend Developer",
+    "name": "Amith Abey Stephen",
+    "role": "Tech Lead",
     "department": "Engineering",
-    "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop&crop=face",
+    "photo": "https://res-3.cloudinary.com/dbzgbdyvv/image/upload/q_auto/v1/ghost/WhatsApp-Image-2024-03-16-at-07.50.45_778a3380.jpg",
     "joinedAt": null
   },
   {
     "id": 7,
-    "name": "Amith Abey Stephen",
-    "role": "Tech Lead",
+    "name": "Nithin Daniel",
+    "role": "Backend Developer",
     "department": "Engineering",
-    "photo": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&h=200&fit=crop&crop=face",
+    "photo": "https://storage.googleapis.com/inovuslabs-cdn.appspot.com/assets/team/2023-2024/Nithin.jpg",
     "joinedAt": null
   },
   {
     "id": 8,
-    "name": "Nithin Daniel",
-    "role": "Backend Developer",
-    "department": "Engineering",
-    "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop&crop=face",
+    "name": "Milan Sony",
+    "role": "Security Engineer",
+    "department": "Security",
+    "photo": "https://storage.googleapis.com/inovuslabs-cdn.appspot.com/assets/team/2023-2024/milansony.jpg",
     "joinedAt": null
   },
   {
     "id": 9,
-    "name": "Amenda Maria",
-    "role": "Security Engineer",
-    "department": "Security",
-    "photo": "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=200&h=200&fit=crop&crop=face",
+    "name": "Roji Thomas",
+    "role": "Software Engineer",
+    "department": "Engineering",
+    "photo": "https://storage.googleapis.com/inovuslabs-cdn.appspot.com/assets/team/2018-2020/rojithomas.jpg",
     "joinedAt": null
   },
   {
     "id": 10,
-    "name": "Sane Sunil",
-    "role": "ML Engineer",
-    "department": "Data",
-    "photo": "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=200&h=200&fit=crop&crop=face",
+    "name": "Amenda Maria Johnson",
+    "role": "Project Manager",
+    "department": "Management",
+    "photo": "https://res-3.cloudinary.com/dbzgbdyvv/image/upload/q_auto/v1/ghost/photo.png",
     "joinedAt": null
   }
 ]

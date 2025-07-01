@@ -81,12 +81,11 @@ export function PersonBubble({ person, index, dimensions }: PersonBubbleProps) {
           style={{ borderColor: departmentTheme.border.replace("0.5", "0.3") }}
         >
           <Image
-            src={person.photo || "/placeholder.svg"}
+            src={person?.photo || "/placeholder.svg"}
             alt={person.name}
             fill
             className="object-cover"
             priority
-            crossOrigin="anonymous"
           />
           <div
             className="absolute inset-0"

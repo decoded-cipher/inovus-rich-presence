@@ -30,7 +30,7 @@ export default function InovusNetworkVisualization() {
   }, [])
 
   useEffect(() => {
-    const initialPeople: Person[] = (peopleData as PersonData[]).slice(0, 8).map((person, index) => {
+    const initialPeople: Person[] = (peopleData as PersonData[]).map((person, index) => {
       const size = dimensions.minSize + Math.random() * (dimensions.maxSize - dimensions.minSize)
       const centerX = dimensions.width / 2
       const centerY = dimensions.height / 2
