@@ -57,7 +57,7 @@ export default function InovusNetworkVisualization() {
   return (
     <div className="relative w-full h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100 overflow-hidden">
       <BackgroundPattern />
-      {/* <CompanyHeader dimensions={dimensions} /> */}
+      <CompanyHeader dimensions={dimensions} />
       <ConnectionCanvas people={people} dimensions={dimensions} />
       <PeopleNetwork people={people} dimensions={dimensions} />
       <LiveFooter peopleCount={people.length} activePersonName={activePersonName} dimensions={dimensions} />

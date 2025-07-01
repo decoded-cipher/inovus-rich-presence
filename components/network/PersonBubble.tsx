@@ -97,7 +97,7 @@ export function PersonBubble({ person, index, dimensions }: PersonBubbleProps) {
         <AnimatePresence>
           {person.showDetails && (
             <motion.div
-              className={`absolute left-1/2 transform -translate-x-1/2 z-30 ${
+              className={`absolute left-1/2 transform -translate-x-1/2 z-50 ${
                 dimensions.isMobile ? "-bottom-16" : dimensions.isTablet ? "-bottom-24" : "-bottom-28"
               }`}
               initial={{ opacity: 0, y: 15, scale: 0.9 }}
@@ -119,7 +119,7 @@ export function PersonBubble({ person, index, dimensions }: PersonBubbleProps) {
                 >
                   {person.name}
                 </p>
-                {/* <p
+                <p
                   className={`text-slate-600 text-center ${
                     dimensions.isMobile ? "text-sm" : dimensions.isTablet ? "text-base" : "text-lg"
                   }`}
@@ -137,7 +137,7 @@ export function PersonBubble({ person, index, dimensions }: PersonBubbleProps) {
                 >
                   <div className="w-2 h-2 rounded-full mr-2" style={{ backgroundColor: departmentTheme.primary }} />
                   {person.department}
-                </div> */}
+                </div>
               </div>
             </motion.div>
           )}
